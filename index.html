@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/weather.css" />
+        <script src="./js/main.js" defer></script>
+        <script src="./js/controller.js" defer></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="main">
+                <h1 class="main__title">Select city</h1>
+                <input type="text" class="main__input" />
+                <button class="main__button">Explore</button>
+            </div>
+
+            <div class="weather">
+                <div class="part">
+                    <h2 class="weather__country"></h2>
+                    <span class="weather__temp"></span>
+                    <span class="weather__city"></span>
+                </div>
+                <div class="part">
+                    <img
+                        src="./img/icons/263.png"
+                        alt="icon"
+                        class="weather__icon"
+                    />
+                    <h3 class="weather__comment"></h3>
+                    <div class="weather__wind">
+                        <span class="wind__title">Wind speed:</span>
+                        <span class="wind__speed"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

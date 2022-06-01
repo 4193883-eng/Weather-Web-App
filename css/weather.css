@@ -1,0 +1,63 @@
+.weather {
+    /* border: 1px solid white; */
+    height: 345px;
+    width: 290px;
+    font-family: "Heebo", sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    display: none;
+}
+
+.weather__country {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.weather__temp {
+    display: block;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 600;
+    position: relative;
+}
+
+.weather__temp::after {
+    content: "℃";
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    right: 80px;
+}
+
+.weather__city {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.weather__comment {
+    text-align: center;
+}
+
+.weather__wind {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.wind__speed::after {
+    content: " km/h";
+    font-size: 15px;
+}
+
+.weather__icon {
+    display: block;
+    margin: 0 auto;
+    height: 64px;
+    width: 64px;
+}
